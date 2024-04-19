@@ -16,13 +16,13 @@ This is a simple FastAPI application for performing CRUD (Create, Read, Update, 
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Niyastk/FastApi-addressbook.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd <project_directory>
+    cd FastApi-addressbook/
     ```
 
 3. Install dependencies:
