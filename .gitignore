@@ -1,3 +1,4 @@
 *.pyc
 db/address_app.db
 .env
+app.log
