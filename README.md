@@ -57,6 +57,10 @@ You can test the API endpoints using tools like `curl`, `Postman`, or built in S
     ```bash
     curl -X POST -H "Content-Type: application/json" -d '{"address": "New York City", "latitude": 40.7128, "longitude": -74.006}' http://localhost:8000/addresses/
     ```
+    Please note that there are validations for these items
+    - **Latitude Validation**: Latitude values are validated to be between -90 and 90 degrees.
+    - **Longitude Validation**: Longitude values are validated to be between -180 and 180 degrees.
+
 
     These are some of the test data for easy use
 
@@ -125,11 +129,12 @@ You can test the API endpoints using tools like `curl`, `Postman`, or built in S
         {"latitude": 40.7306,"longitude": -73.9352,"distance": 20}
      ```
 
-## Dependencies
+## Main Dependencies
 
 This project relies on several external dependencies to function properly. Here's a list of the main ones:
 
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
 - **SQLAlchemy**: A powerful SQL toolkit and Object-Relational Mapping (ORM) library for Python.
 - **Geopy**: A Python library that makes it easy to locate the coordinates of addresses, cities, countries, and landmarks across the globe.
-
+- **Black**: Ensures consistent Python code formatting according to the PEP 8 style guide.
+- **loguru**: Facilitates comprehensive event logging, with all logged events stored in a dedicated file named `app.log`.
